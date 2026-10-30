@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter,+Pretendard,+-apple-system,+sans-serif:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-variant":"#e0e3e5","on-secondary-fixed-variant":"#3c475a","tertiary-fixed":"#dbe1ff","on-primary":"#ffffff","surface-dim":"#d8dadc","surface":"#f7f9fb","surface-container-highest":"#e0e3e5","primary-fixed-dim":"#bec6e0","outline-variant":"#c6c6cd","on-primary-container":"#7c839b","on-tertiary-container":"#497cff","inverse-primary":"#bec6e0","secondary":"#545f73","on-background":"#191c1e","surface-container":"#eceef0","secondary-fixed-dim":"#bcc7de","surface-container-high":"#e6e8ea","tertiary-fixed-dim":"#b4c5ff","on-secondary-fixed":"#111c2d","surface-container-low":"#f2f4f6","inverse-surface":"#2d3133","on-tertiary":"#ffffff","primary-fixed":"#dae2fd","secondary-container":"#d5e0f8","error":"#ba1a1a","surface-container-lowest":"#ffffff","on-secondary-container":"#586377","on-tertiary-fixed":"#00174b","primary":"#000000","on-tertiary-fixed-variant":"#003ea8","tertiary":"#000000","on-surface-variant":"#45464d","outline":"#76777d","surface-bright":"#f7f9fb","secondary-fixed":"#d8e3fb","on-error":"#ffffff","background":"#f7f9fb","on-error-container":"#93000a","tertiary-container":"#00174b","inverse-on-surface":"#eff1f3","on-secondary":"#ffffff","on-primary-fixed-variant":"#3f465c","on-surface":"#191c1e","on-primary-fixed":"#131b2e","surface-tint":"#565e74","primary-container":"#131b2e","error-container":"#ffdad6"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-xl":"1.75rem",margin:"1rem","space-lg":"1.25rem","space-xs":"0.25rem","space-sm":"0.5rem","space-md":"0.75rem","margin-desktop":"1.75rem","gutter-desktop":"1.5rem",gutter:"1rem"},fontFamily:{"headline-title":["\"Inter, Pretendard, -apple-system, sans-serif\""],"body-compact-bold":["\"Inter, Pretendard, -apple-system, sans-serif\""],"body-medium":["\"Inter, Pretendard, -apple-system, sans-serif\""],"badge-label":["\"Inter, Pretendard, -apple-system, sans-serif\""],"body-compact":["\"Inter, Pretendard, -apple-system, sans-serif\""],"headline-kpi":["\"Inter, Pretendard, -apple-system, sans-serif\""],"data-mono":["\"JetBrains Mono, Pretendard, monospace\""],"headline-kpi-mobile":["\"Inter, Pretendard, -apple-system, sans-serif\""],"section-header":["\"Inter, Pretendard, -apple-system, sans-serif\""],"body-default":["\"Inter, Pretendard, -apple-system, sans-serif\""]},fontSize:{"headline-title":["20px",{lineHeight:"28px",fontWeight:"600"}],"body-compact-bold":["13px",{lineHeight:"18px",fontWeight:"600"}],"body-medium":["14px",{lineHeight:"20px",fontWeight:"500"}],"badge-label":["11px",{lineHeight:"14px",fontWeight:"600"}],"body-compact":["13px",{lineHeight:"18px",fontWeight:"400"}],"headline-kpi":["32px",{lineHeight:"38px",fontWeight:"700"}],"data-mono":["13px",{lineHeight:"18px",fontWeight:"500"}],"headline-kpi-mobile":["24px",{lineHeight:"30px",fontWeight:"700"}],"section-header":["16px",{lineHeight:"24px",fontWeight:"600"}],"body-default":["14px",{lineHeight:"20px",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-body-default text-on-surface antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-margin-desktop flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-xl"><div class="flex items-center gap-space-md"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1V4y-p-mHZMnst5imB1XHnEZf3bW-0JLNNI6Kov1dq5A84InB_U1gscRHTbOQHFWxygn9o41K_4wJcRjODGwo3MSyqx_O521VMe4UdVoyp_qd9PNqjGe65B9_G9K1aM9ZTEWY1h32bUROj0iLMr1Ng8gwENzhzPL6TeQGrvZLWsekfKrXPRKl6RTDyyEvYOCXcbpQvyEeSLQ-W4ItieCEhKsTv0-TU0CqZcK7DDO60"/><div class="flex items-center gap-space-sm"><span class="font-section-header text-section-header text-on-surface tracking-tight whitespace-nowrap">현장별 공정·기성 대시보드</span><span class="px-space-sm py-space-xs rounded bg-surface-container-high text-on-surface-variant font-badge-label text-badge-label whitespace-nowrap">본사 총괄 관리</span></div></div><div class="h-4 w-px bg-outline-variant"></div><nav class="flex items-center gap-space-xs" data-active-classes="bg-surface-container text-on-surface font-body-compact-bold rounded-lg shadow-sm"><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface font-body-compact text-body-compact transition-colors whitespace-nowrap" data-path="summary" href="#">현황 요약</a><a aria-current="page" class="px-space-md py-space-xs transition-colors whitespace-nowrap bg-surface-container text-on-surface font-body-compact-bold rounded-lg shadow-sm" data-path="comparison" href="#">현장별 비교표</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface font-body-compact text-body-compact transition-colors whitespace-nowrap" data-path="ai-query" href="#">AI에게 묻기</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-xs rounded bg-surface-container-low text-on-surface-variant font-data-mono text-data-mono"><span class="w-2 h-2 rounded-full bg-secondary"></span><span>2026년 9월 기준 (12개 현장 정상 로드)</span></div><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container-lowest text-secondary hover:bg-surface-container-low hover:text-on-surface font-body-compact-bold text-body-compact-bold shadow-[0_1px_2px_rgba(0,0,0,0.05)] transition-colors whitespace-nowrap" type="button"><span class="material-symbols-outlined text-secondary" style="font-size:16px;">upload_file</span><span>자료 가져오기</span></button><div class="h-4 w-px bg-outline-variant"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-7 h-7 rounded-full bg-primary-container text-on-primary font-body-compact-bold text-body-compact flex items-center justify-center tracking-tight">김</div><div class="flex flex-col text-left"><span class="font-body-compact-bold text-body-compact-bold text-on-surface leading-tight whitespace-nowrap">김영수 전무</span><span class="font-badge-label text-badge-label text-secondary leading-tight whitespace-nowrap">현장총괄본부</span></div></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-64px)]"><div class="flex flex-col w-full">
+<!-- Controls Bar -->
+<section class="w-full bg-surface-container-lowest px-margin-desktop py-space-md shadow-sm">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Left Filters -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-secondary" style="font-size:16px;">calendar_month</span>
+<span class="font-body-compact-bold text-body-compact-bold whitespace-nowrap">2026-09</span>
+<span class="font-badge-label text-badge-label text-on-surface-variant">(당월 마감)</span>
+</div>
+<div class="relative">
+<select class="appearance-none bg-surface-container-lowest text-on-surface font-body-compact text-body-compact px-space-md py-space-xs pr-8 rounded-lg shadow-sm focus:outline-none focus:bg-surface-container-low transition-colors cursor-pointer" id="regionFilter">
+<option value="ALL">전체 지역 (전국)</option>
+<option value="서울">서울권역</option>
+<option value="경기">경기권역</option>
+<option value="인천">인천권역</option>
+<option value="부산">부산/경남권</option>
+<option value="세종">충청/세종권</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2 top-2 text-secondary" style="font-size:16px;">expand_more</span>
+</div>
+<div class="relative">
+<select class="appearance-none bg-surface-container-lowest text-on-surface font-body-compact text-body-compact px-space-md py-space-xs pr-8 rounded-lg shadow-sm focus:outline-none focus:bg-surface-container-low transition-colors cursor-pointer" id="typeFilter">
+<option value="ALL">전체 공종 (건축/토목)</option>
+<option value="공동주택">공동주택</option>
+<option value="주상복합">주상복합</option>
+<option value="오피스">업무시설 (오피스)</option>
+<option value="인프라">인프라/토목</option>
+<option value="물류센터">물류센터</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2 top-2 text-secondary" style="font-size:16px;">expand_more</span>
+</div>
+<div class="relative min-w-[220px]">
+<input class="w-full bg-surface-container-low text-on-surface font-body-compact text-body-compact pl-8 pr-space-md py-space-xs rounded-lg focus:outline-none focus:bg-surface-container-lowest shadow-sm transition-all" id="searchInput" placeholder="현장명, 코드 검색 (예: 현장 D)..." type="text"/>
+<span class="material-symbols-outlined absolute left-2.5 top-2 text-secondary" style="font-size:16px;">search</span>
+</div>
+</div>
+<!-- Right Action Tools -->
+<div class="flex items-center gap-space-sm justify-end">
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-body-compact-bold text-body-compact-bold whitespace-nowrap shadow-sm" id="toggleAllBtn">
+<span class="material-symbols-outlined text-secondary" id="toggleIcon" style="font-size:16px;">unfold_more</span>
+<span id="toggleText">전체 행 펼치기</span>
+</button>
+<!-- CSV Export with Executive Tooltip -->
+<div class="relative group">
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-all font-body-compact-bold text-body-compact-bold whitespace-nowrap shadow-sm" id="exportCsvBtn">
+<span class="material-symbols-outlined text-tertiary-fixed" style="font-size:16px;">download</span>
+<span>현재 범위 CSV 내보내기 (19개 열)</span>
+</button>
+<!-- Tooltip Flyout -->
+<div class="absolute right-0 top-full mt-2 w-80 p-space-md bg-inverse-surface text-inverse-on-surface rounded-xl shadow-xl z-30 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-200">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-tertiary-fixed shrink-0" style="font-size:16px;">info</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-body-compact-bold text-body-compact-bold text-inverse-on-surface">내보내기 필드 구조 안내</span>
+<span class="font-badge-label text-badge-label text-surface-variant leading-relaxed">
+                  현재 필터 범위(12개 현장)의 원본 15개 열 + 기성률·공정차이·상태·당월기성액 4개 열(총 19열, UTF-8 BOM 지원)
+                </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Metric Quick Ribbon -->
+<section class="w-full px-margin-desktop py-space-md bg-surface">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-badge-label text-badge-label text-secondary uppercase tracking-wider">총 관리 대상 현장</span>
+<span class="font-headline-kpi text-headline-kpi text-on-surface tracking-tight mt-1">12<span class="font-section-header text-section-header ml-1 font-normal text-secondary">개소</span></span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined">apartment</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-badge-label text-badge-label text-secondary uppercase tracking-wider">공정 정상 (Normal)</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-kpi text-headline-kpi text-on-surface tracking-tight">6</span>
+<span class="font-badge-label text-badge-label text-secondary">개소 (50%)</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center">
+<span class="w-3.5 h-3.5 rounded-full bg-secondary"></span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-badge-label text-badge-label text-secondary uppercase tracking-wider">관리 주의 (Caution)</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-kpi text-headline-kpi text-on-surface tracking-tight">3</span>
+<span class="font-badge-label text-badge-label text-secondary">개소 (공정 편차 -5pp 이내)</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined" style="font-size:20px;">warning</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-error-container/40 shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-badge-label text-badge-label text-error uppercase tracking-wider font-body-compact-bold">집중 점검 대상 (Critical)</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-kpi text-headline-kpi text-error tracking-tight">3</span>
+<span class="font-badge-label text-badge-label text-error">개소 (지연 -5pp 초과)</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-error text-on-error flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-size:20px;">error</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Data Comparison Table Area -->
+<section class="w-full px-margin-desktop pb-space-xl">
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col">
+<!-- Table Filter Bar Sub-Header -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-section-header text-section-header text-on-surface">2026년 9월 종합 공정률 및 기성 실적 현황</span>
+<span class="font-badge-label text-badge-label px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-data-mono">12 Sites Enrolled</span>
+</div>
+<div class="flex items-center gap-space-md font-badge-label text-badge-label text-secondary">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-error"></span>점검 (공정차 ≤ -5.0pp)</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary-container"></span>주의 (-5.0pp < 공정차 < 0)</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span>정상 (공정차 ≥ 0)</span>
+</div>
+</div>
+<!-- Responsive Scrollable Data Grid -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse min-w-[1240px]" id="comparisonTable">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-badge-label text-badge-label tracking-wider uppercase select-none">
+<th class="py-3 px-3 cursor-pointer hover:bg-surface-container-high transition-colors" data-sort="site" scope="col">
+<div class="flex items-center gap-1"><span>현장명</span><span class="material-symbols-outlined text-secondary" style="font-size:14px;">unfold_more</span></div>
+</th>
+<th class="py-3 px-2" scope="col">지역</th>
+<th class="py-3 px-2" scope="col">공사 유형</th>
+<th class="py-3 px-2" scope="col">당월 주요 공종</th>
+<th class="py-3 px-3 text-right cursor-pointer hover:bg-surface-container-high transition-colors" data-sort="contract" scope="col">
+<div class="flex items-center justify-end gap-1"><span>계약금액(백만원)</span><span class="material-symbols-outlined text-secondary" style="font-size:14px;">unfold_more</span></div>
+</th>
+<th class="py-3 px-3 text-right cursor-pointer hover:bg-surface-container-high transition-colors" data-sort="accumPaid" scope="col">
+<div class="flex items-center justify-end gap-1"><span>누적기성액(백만원)</span><span class="material-symbols-outlined text-secondary" style="font-size:14px;">unfold_more</span></div>
+</th>
+<th class="py-3 px-3 text-right cursor-pointer hover:bg-surface-container-high transition-colors" data-sort="monthPaid" scope="col">
+<div class="flex items-center justify-end gap-1"><span>당월기성액(백만원)</span><span class="material-symbols-outlined text-secondary" style="font-size:14px;">unfold_more</span></div>
+</th>
+<th class="py-3 px-3 text-right cursor-pointer hover:bg-surface-container-high transition-colors" data-sort="progressPaid" scope="col">
+<div class="flex items-center justify-end gap-1"><span>기성률(%)</span><span class="material-symbols-outlined text-secondary" style="font-size:14px;">unfold_more</span></div>
+</th>
+<th class="py-3 px-3 text-right" scope="col">계획공정(%)</th>
+<th class="py-3 px-3 text-right" scope="col">실제공정(%)</th>
+<th class="py-3 px-3 text-right cursor-pointer hover:bg-surface-container-high transition-colors" data-sort="diff" scope="col">
+<div class="flex items-center justify-end gap-1"><span class="text-on-surface font-body-compact-bold">공정차이(pp)</span><span class="material-symbols-outlined text-on-surface" style="font-size:14px;">unfold_more</span></div>
+</th>
+<th class="py-3 px-3 text-center" scope="col">공정 상태</th>
+<th class="py-3 px-2 text-center" scope="col">상세 기록</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container text-on-surface font-body-compact text-body-compact" id="tableBody">
+<!-- Site A (정상) -->
+<tr class="hover:bg-surface-container-low transition-colors duration-150 group" data-accumpaid="58800" data-contract="84000" data-diff="0.8" data-monthpaid="2450" data-progresspaid="70.0" data-region="서울" data-site="현장 A" data-status="정상" data-type="공동주택">
+<td class="py-2.5 px-3 font-body-compact-bold text-on-surface flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>현장 A (강남 주거단지)</span>
+</td>
+<td class="py-2.5 px-2 text-secondary">서울</td>
+<td class="py-2.5 px-2">공동주택</td>
+<td class="py-2.5 px-2 text-on-surface-variant font-data-mono">지하 골조 완료 및 승강기 공사</td>
+<td class="py-2.5 px-3 text-right font-data-mono">84,000</td>
+<td class="py-2.5 px-3 text-right font-data-mono">58,800</td>
+<td class="py-2.5 px-3 text-right font-data-mono">2,450</td>
+<td class="py-2.5 px-3 text-right font-data-mono">70.0%</td>
+<td class="py-2.5 px-3 text-right font-data-mono text-secondary">71.2%</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-body-compact-bold">72.0%</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-body-compact-bold text-secondary">+0.8pp</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-badge-label text-badge-label bg-surface-container text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>정상
+                </span>
+</td>
+<td class="py-2.5 px-2 text-center">
+<button class="expand-btn p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface transition-colors" data-target="detail-a">
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+</td>
+</tr>
+<tr class="hidden bg-surface-container-low/60" id="detail-a">
+<td class="p-space-lg" colspan="13">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+<div class="flex flex-col">
+<span class="font-badge-label text-badge-label text-secondary uppercase">공사 기간</span>
+<span class="font-body-compact-bold text-body-compact-bold mt-1">2023-11-01 ~ 2026-12-31 (38개월)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-badge-label text-badge-label text-secondary uppercase">기록된 현황 요약</span>
+<span class="font-body-compact text-body-compact mt-1 text-on-surface-variant">당월 골조 완공 후 승강기 장비 양중 정상 진행 완료. 후속 내장 마감 협력사 조기 배치로 일정 안정.</span>
+</div>
+<div class="flex flex-col">
+<span class="font-badge-label text-badge-label text-secondary uppercase">계획된 대응</span>
+<span class="font-body-compact text-body-compact mt-1 text-on-surface-variant">동절기 전 외벽 마감 단열 작업 조기 착수하여 잔여 공기 12일 단축 확보 예정.</span>
+</div>
+</div>
+</td>
+</tr>
+<!-- Site B (주의) -->
+<tr class="hover:bg-surface-container-low transition-colors duration-150 group" data-accumpaid="22660" data-contract="41200" data-diff="-2.4" data-monthpaid="980" data-progresspaid="55.0" data-region="경기" data-site="현장 B" data-status="주의" data-type="오피스">
+<td class="py-2.5 px-3 font-body-compact-bold text-on-surface flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+<span>현장 B (판교 IT타워 신축)</span>
+</td>
+<td class="py-2.5 px-2 text-secondary">경기</td>
+<td class="py-2.5 px-2">오피스</td>
+<td class="py-2.5 px-2 text-on-surface-variant font-data-mono">지상 14층 철골 데크플레이트 타설</td>
+<td class="py-2.5 px-3 text-right font-data-mono">41,200</td>
+<td class="py-2.5 px-3 text-right font-data-mono">22,660</td>
+<td class="py-2.5 px-3 text-right font-data-mono">980</td>
+<td class="py-2.5 px-3 text-right font-data-mono">55.0%</td>
+<td class="py-2.5 px-3 text-right font-data-mono text-secondary">62.8%</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-body-compact-bold">60.4%</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-body-compact-bold text-on-secondary-container">-2.4pp</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-badge-label text-badge-label bg-secondary-container text-on-secondary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-on-secondary-container"></span>주의
+                </span>
+</td>
+<td class="py-2.5 px-2 text-center">
+<button class="expand-btn p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface transition-colors" data-target="detail-b">
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+</td>
+</tr>
+<tr class="hidden bg-surface-container-low/60" id="detail-b">
+<td class="p-space-lg" colspan="13">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+<div>
+<span class="font-badge-label text-badge-label text-secondary uppercase">공사 기간</span>
+<p class="font-body-compact-bold text-body-compact-bold mt-1">2024-05-15 ~ 2026-11-30 (30개월)</p>
+</div>
+<div>
+<span class="font-badge-label text-badge-label text-secondary uppercase">기록된 상황</span>
+<p class="font-body-compact text-body-compact mt-1 text-on-surface-variant">철골 제작 공장 내 용접 검사일정 지연으로 인한 양중 간섭 발생. 주간 공정률 1.2% 지체.</p>
+</div>
+<div>
+<span class="font-badge-label text-badge-label text-secondary uppercase">계획된 대응</span>
+<p class="font-body-compact text-body-compact mt-1 text-on-surface-variant">크레인 1대 추가 렌탈 배치 및 주말 데크 타설 분할 진행을 통해 10월 2주차까지 회복 계획 수립.</p>
+</div>
+</div>
+</td>
+</tr>
+<!-- Site C (정상) -->
+<tr class="hover:bg-surface-container-low transition-colors duration-150 group" data-accumpaid="56700" data-contract="67500" data-diff="+1.1" data-monthpaid="3100" data-progresspaid="84.0" data-region="경기" data-site="현장 C" data-status="정상" data-type="물류센터">
+<td class="py-2.5 px-3 font-body-compact-bold text-on-surface flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>현장 C (이천 복합물류 허브)</span>
+</td>
+<td class="py-2.5 px-2 text-secondary">경기</td>
+<td class="py-2.5 px-2">물류센터</td>
+<td class="py-2.5 px-2 text-on-surface-variant font-data-mono">외벽 샌드위치 패널 및 소방배관 시공</td>
+<td class="py-2.5 px-3 text-right font-data-mono">67,500</td>
+<td class="py-2.5 px-3 text-right font-data-mono">56,700</td>
+<td class="py-2.5 px-3 text-right font-data-mono">3,100</td>
+<td class="py-2.5 px-3 text-right font-data-mono">84.0%</td>
+<td class="py-2.5 px-3 text-right font-data-mono text-secondary">82.9%</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-body-compact-bold">84.0%</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-body-compact-bold text-secondary">+1.1pp</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-badge-label text-badge-label bg-surface-container text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>정상
+                </span>
+</td>
+<td class="py-2.5 px-2 text-center">
+<button class="expand-btn p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface transition-colors" data-target="detail-c">
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+</td>
+</tr>
+<tr class="hidden bg-surface-container-low/60" id="detail-c">
+<td class="p-space-lg" colspan="13">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+<div>
+<span class="font-badge-label text-badge-label text-secondary uppercase">공사 기간</span>
+<p class="font-body-compact-bold text-body-compact-bold mt-1">2023-09-01 ~ 2026-10-31 (37개월)</p>
+</div>
+<div>
+<span class="font-badge-label text-badge-label text-secondary uppercase">기록된 상황</span>
+<p class="font-body-compact text-body-compact mt-1 text-on-surface-variant">소방 감리 준공전 사전 점검 합격. 자동화 물류 랙 시스템 설치 순항 중.</p>
+</div>
+<div>
+<span class="font-badge-label text-badge-label text-secondary uppercase">계획된 대응</span>
+<p class="font-body-compact text-body-compact mt-1 text-on-surface-variant">시운전 점검단 조기 발족하여 입주자 검수 일정 대비 1주일 단축 마무리.</p>
+</div>
+</div>
+</td>
+</tr>
+<!-- Site D (점검 - SPECIFIC PRD REQUIREMENT: DEFAULT EXPANDED & HIGHLIGHTED) -->
+<tr class="bg-error-container/30 transition-colors duration-150 group" data-accumpaid="36088" data-contract="52000" data-diff="-10.7" data-monthpaid="1150" data-progresspaid="69.4" data-region="인천" data-site="현장 D" data-status="점검" data-type="공동주택" id="row-d">
+<td class="py-3 px-3 font-body-compact-bold text-on-surface flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+<span class="text-error font-body-compact-bold">현장 D (청라 주거 2단지)</span>
+</td>
+<td class="py-3 px-2 text-on-surface">인천</td>
+<td class="py-3 px-2">공동주택</td>
+<td class="py-3 px-2 text-error font-body-compact-bold">마감 및 골조</td>
+<td class="py-3 px-3 text-right font-data-mono font-body-compact-bold">52,000</td>
+<td class="py-3 px-3 text-right font-data-mono">36,088</td>
+<td class="py-3 px-3 text-right font-data-mono">1,150</td>
+<td class="py-3 px-3 text-right font-data-mono font-body-compact-bold text-error">69.4%</td>
+<td class="py-3 px-3 text-right font-data-mono text-secondary">86.5%</td>
+<td class="py-3 px-3 text-right font-data-mono font-body-compact-bold text-error">75.8%</td>
+<td class="py-3 px-3 text-right font-data-mono font-body-compact-bold text-error text-[14px]">-10.7pp</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded font-badge-label text-badge-label bg-error text-on-error shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-on-error"></span>점검
+                </span>
+</td>
+<td class="py-3 px-2 text-center">
+<button class="expand-btn p-1 rounded bg-error/10 text-error hover:bg-error/20 transition-colors" data-target="detail-d">
+<span class="material-symbols-outlined text-[18px]">expand_less</span>
+</button>
+</td>
+</tr>
+<!-- Accordion Panel for Site D (Default OPEN) -->
+<tr class="bg-error-container/20" id="detail-d">
+<td class="p-space-lg" colspan="13">
+<div class="flex flex-col gap-space-md p-space-lg bg-surface-container-lowest rounded-xl shadow-md">
+<div class="flex flex-wrap items-center justify-between pb-space-sm gap-2">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-0.5 rounded bg-error text-on-error font-badge-label text-badge-label">긴급 관리 현장</span>
+<span class="font-section-header text-section-header text-on-surface">현장 D 상세 공정 지연 원인 및 만회 대책 보고서</span>
+</div>
+<div class="flex items-center gap-space-sm text-secondary font-data-mono text-body-compact">
+<span class="font-body-compact-bold text-error">[공사기간] 2024-03-01 ~ 2027-02-28 (36개월)</span>
+<span>|</span>
+<span>현장소장: 박진호 부장</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Recorded Situation Box -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-space-xs text-error font-body-compact-bold mb-2">
+<span class="material-symbols-outlined" style="font-size:18px;">history_edu</span>
+<span>[기록된 상황]</span>
+</div>
+<p class="font-body-default text-body-default text-on-surface leading-relaxed">
+                        “주요 자재(철근·레미콘) 공급 정상화 후에도 골조 후속공정 잔여 지연 영향 지속. 인력 투입 불균형으로 당월 공정 만회 미흡.”
+                      </p>
+<div class="mt-space-md pt-space-xs flex items-center justify-between font-badge-label text-badge-label text-secondary">
+<span>지연 누적 공기: 42일</span>
+<span>당월 투입 인력: 1,420공수 (계획 대비 78%)</span>
+</div>
+</div>
+<!-- Planned Countermeasure Box -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-space-xs text-on-surface font-body-compact-bold mb-2">
+<span class="material-symbols-outlined text-secondary" style="font-size:18px;">event_repeat</span>
+<span>[계획된 대응]</span>
+</div>
+<p class="font-body-default text-body-default text-on-surface leading-relaxed">
+                        “골조 잔여구간 2개 조 동시 투입 및 야간 양생 관리 강화. 10월 중 주간 단위 공정 만회 실적 집중 점검 회의 시행 예정.”
+                      </p>
+<div class="mt-space-md pt-space-xs flex items-center justify-between font-badge-label text-badge-label text-secondary">
+<span>본사 기술지원팀 파견: 10월 05일 확정</span>
+<span>목표 만회 공정률: 당월 +4.5pp</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-secondary font-badge-label text-badge-label">
+<span>최종 감리 확인 일자: 2026-09-28 (인천 감리단)</span>
+<button class="px-space-md py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-compact-bold text-body-compact-bold transition-colors">
+                      본사 공정합동점검 회의록 전문 보기
+                    </button>
+</div>
+</div>
+</td>
+</tr>
+<!-- Site E (주의) -->
+<tr class="hover:bg-surface-container-low transition-colors duration-150 group" data-accumpaid="41850" data-contract="93000" data-diff="-1.8" data-monthpaid="2100" data-progresspaid="45.0" data-region="세종" data-site="현장 E" data-status="주의" data-type="공동주택">
+<td class="py-2.5 px-3 font-body-compact-bold text-on-surface flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+<span>현장 E (세종 행정복합 B타운)</span>
+</td>
+<td class="py-2.5 px-2 text-secondary">세종</td>
+<td class="py-2.5 px-2">공동주택</td>
+<td class="py-2.5 px-2 text-on-surface-variant font-data-mono">지상 7층 골조 및 창호 프레임 시공</td>
+<td class="py-2.5 px-3 text-right font-data-mono">93,000</td>
+<td class="py-2.5 px-3 text-right font-data-mono">41,850</td>
+<td class="py-2.5 px-3 text-right font-data-mono">2,100</td>
+<td class="py-2.5 px-3 text-right font-data-mono">45.0%</td>
+<td class="py-2.5 px-3 text-right font-data-mono text-secondary">51.2%</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-body-compact-bold">49.4%</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-body-compact-bold text-on-secondary-container">-1.8pp</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-badge-label text-badge-label bg-secondary-container text-on-secondary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-on-secondary-container"></span>주의
+                </span>
+</td>
+<td class="py-2.5 px-2 text-center">
+<button class="expand-btn p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface transition-colors" data-target="detail-e">
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+</td>
+</tr>
+<tr class="hidden bg-surface-container-low/60" id="detail-e">
+<td class="p-space-lg" colspan="13">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+<div>
+<span class="font-badge-label text-badge-label text-secondary uppercase">공사 기간</span>
+<p class="font-body-compact-bold text-body-compact-bold mt-1">2024-01-10 ~ 2027-04-30 (39개월)</p>
+</div>
+<div>
+<span class="font-badge-label text-badge-label text-secondary uppercase">기록된 상황</span>
+<p class="font-body-compact text-body-compact mt-1 text-on-surface-variant">잦은 가을 우천으로 야외 콘크리트 타설 일정 3회 순연.</p>
+</div>
+<div>
+<span class="font-badge-label text-badge-label text-secondary uppercase">계획된 대응</span>
+<p class="font-body-compact text-body-compact mt-1 text-on-surface-variant">타설 장비 펌프카 사전 배차 우선권 확보 및 차주 맑은 기상 시 연속 작업 편성.</p>
+</div>
+</div>
+</td>
+</tr>
+<!-- Site F (정상) -->
+<tr class="hover:bg-surface-container-low transition-colors duration-150 group" data-accumpaid="112640" data-contract="128000" data-diff="+0.4" data-monthpaid="4200" data-progresspaid="88.0" data-region="경기" data-site="현장 F" data-status="정상" data-type="인프라">
+<td class="py-2.5 px-3 font-body-compact-bold text-on-surface flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>현장 F (수도권 광역급행 지하구간)</span>
+</td>
+<td class="py-2.5 px-2 text-secondary">경기</td>
+<td class="py-2.5 px-2">인프라</td>
+<td class="py-2.5 px-2 text-on-surface-variant font-data-mono">TBM 굴진 터널 라이닝 세그먼트 완료</td>
+<td class="py-2.5 px-3 text-right font-data-mono">128,000</td>
+<td class="py-2.5 px-3 text-right font-data-mono">112,640</td>
+<td class="py-2.5 px-3 text-right font-data-mono">4,200</td>
+<td class="py-2.5 px-3 text-right font-data-mono">88.0%</td>
+<td class="py-2.5 px-3 text-right font-data-mono text-secondary">89.6%</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-body-compact-bold">90.0%</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-body-compact-bold text-secondary">+0.4pp</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-badge-label text-badge-label bg-surface-container text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>정상
+                </span>
+</td>
+<td class="py-2.5 px-2 text-center">
+<button class="expand-btn p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface transition-colors" data-target="detail-f">
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+</td>
+</tr>
+<tr class="hidden bg-surface-container-low/60" id="detail-f">
+<td class="p-space-lg" colspan="13">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+<div>
+<span class="font-badge-label text-badge-label text-secondary uppercase">공사 기간</span>
+<p class="font-body-compact-bold text-body-compact-bold mt-1">2022-04-01 ~ 2026-12-31 (56개월)</p>
+</div>
+<div>
+<span class="font-badge-label text-badge-label text-secondary uppercase">기록된 상황</span>
+<p class="font-body-compact text-body-compact mt-1 text-on-surface-variant">터널 관통 후 궤도 부설 공정 인계 준비 순항.</p>
+</div>
+<div>
+<span class="font-badge-label text-badge-label text-secondary uppercase">계획된 대응</span>
+<p class="font-body-compact text-body-compact mt-1 text-on-surface-variant">신호 통신 케이블 관로 인입 점검 후 11월 합동 시운전 진입 예정.</p>
+</div>
+</div>
+</td>
+</tr>
+<!-- Site G (정상) -->
+<tr class="hover:bg-surface-container-low transition-colors duration-150 group" data-accumpaid="11550" data-contract="38500" data-diff="+2.5" data-monthpaid="1320" data-progresspaid="30.0" data-region="서울" data-site="현장 G" data-status="정상" data-type="오피스">
+<td class="py-2.5 px-3 font-body-compact-bold text-on-surface flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>현장 G (마포 복합업무시설)</span>
+</td>
+<td class="py-2.5 px-2 text-secondary">서울</td>
+<td class="py-2.5 px-2">오피스</td>
+<td class="py-2.5 px-2 text-on-surface-variant font-data-mono">토공사 굴착 및 흙막이 지보재 설치</td>
+<td class="py-2.5 px-3 text-right font-data-mono">38,500</td>
+<td class="py-2.5 px-3 text-right font-data-mono">11,550</td>
+<td class="py-2.5 px-3 text-right font-data-mono">1,320</td>
+<td class="py-2.5 px-3 text-right font-data-mono">30.0%</td>
+<td class="py-2.5 px-3 text-right font-data-mono text-secondary">28.5%</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-body-compact-bold">31.0%</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-body-compact-bold text-secondary">+2.5pp</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-badge-label text-badge-label bg-surface-container text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>정상
+                </span>
+</td>
+<td class="py-2.5 px-2 text-center">
+<button class="expand-btn p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface transition-colors" data-target="detail-g">
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+</td>
+</tr>
+<tr class="hidden bg-surface-container-low/60" id="detail-g">
+<td class="p-space-lg" colspan="13">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+<div>
+<span class="font-badge-label text-badge-label text-secondary uppercase">공사 기간</span>
+<p class="font-body-compact-bold text-body-compact-bold mt-1">2025-02-01 ~ 2028-01-31 (36개월)</p>
+</div>
+<div>
+<span class="font-badge-label text-badge-label text-secondary uppercase">기록된 상황</span>
+<p class="font-body-compact text-body-compact mt-1 text-on-surface-variant">지반 암반선 예상보다 양호하여 굴착 속도 가속화.</p>
+</div>
+<div>
+<span class="font-badge-label text-badge-label text-secondary uppercase">계획된 대응</span>
+<p class="font-body-compact text-body-compact mt-1 text-on-surface-variant">지하 기초 매트 콘크리트 조기 타설 착수.</p>
+</div>
+</div>
+</td>
+</tr>
+<!-- Site H (정상) -->
+<tr class="hover:bg-surface-container-low transition-colors duration-150 group" data-accumpaid="47120" data-contract="76000" data-diff="+0.2" data-monthpaid="2180" data-progresspaid="62.0" data-region="부산" data-site="현장 H" data-status="정상" data-type="공동주택">
+<td class="py-2.5 px-3 font-body-compact-bold text-on-surface flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>현장 H (해운대 오션 리버사이드)</span>
+</td>
+<td class="py-2.5 px-2 text-secondary">부산</td>
+<td class="py-2.5 px-2">공동주택</td>
+<td class="py-2.5 px-2 text-on-surface-variant font-data-mono">지상 22층 기준층 조적 및 미장</td>
+<td class="py-2.5 px-3 text-right font-data-mono">76,000</td>
+<td class="py-2.5 px-3 text-right font-data-mono">47,120</td>
+<td class="py-2.5 px-3 text-right font-data-mono">2,180</td>
+<td class="py-2.5 px-3 text-right font-data-mono">62.0%</td>
+<td class="py-2.5 px-3 text-right font-data-mono text-secondary">64.1%</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-body-compact-bold">64.3%</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-body-compact-bold text-secondary">+0.2pp</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-badge-label text-badge-label bg-surface-container text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>정상
+                </span>
+</td>
+<td class="py-2.5 px-2 text-center">
+<button class="expand-btn p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface transition-colors" data-target="detail-h">
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+</td>
+</tr>
+<tr class="hidden bg-surface-container-low/60" id="detail-h">
+<td class="p-space-lg" colspan="13">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+<div>
+<span class="font-badge-label text-badge-label text-secondary uppercase">공사 기간</span>
+<p class="font-body-compact-bold text-body-compact-bold mt-1">2024-04-01 ~ 2027-03-31 (36개월)</p>
+</div>
+<div>
+<span class="font-badge-label text-badge-label text-secondary uppercase">기록된 상황</span>
+<p class="font-body-compact text-body-compact mt-1 text-on-surface-variant">태풍 방재 조기 복구 및 자재 양중 타워크레인 안전점검 통과.</p>
+</div>
+<div>
+<span class="font-badge-label text-badge-label text-secondary uppercase">계획된 대응</span>
+<p class="font-body-compact text-body-compact mt-1 text-on-surface-variant">동절기 골조 타설 보온 텐트 설비 사전 입고 점검.</p>
+</div>
+</div>
+</td>
+</tr>
+<!-- Site I (점검 - SPECIFIC PRD REQUIREMENT: CLICKABLE ACCORDION) -->
+<tr class="hover:bg-error-container/20 bg-error-container/10 transition-colors duration-150 group" data-accumpaid="72600" data-contract="110000" data-diff="-7.6" data-monthpaid="1800" data-progresspaid="66.0" data-region="서울" data-site="현장 I" data-status="점검" data-type="주상복합">
+<td class="py-2.5 px-3 font-body-compact-bold text-on-surface flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span class="text-error font-body-compact-bold">현장 I (용산 주상복합 랜드마크)</span>
+</td>
+<td class="py-2.5 px-2 text-secondary">서울</td>
+<td class="py-2.5 px-2">주상복합</td>
+<td class="py-2.5 px-2 text-on-surface-variant font-data-mono">외장 커튼월 및 내부 마감</td>
+<td class="py-2.5 px-3 text-right font-data-mono">110,000</td>
+<td class="py-2.5 px-3 text-right font-data-mono">72,600</td>
+<td class="py-2.5 px-3 text-right font-data-mono">1,800</td>
+<td class="py-2.5 px-3 text-right font-data-mono">66.0%</td>
+<td class="py-2.5 px-3 text-right font-data-mono text-secondary">79.2%</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-body-compact-bold text-error">71.6%</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-body-compact-bold text-error text-[14px]">-7.6pp</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-badge-label text-badge-label bg-error text-on-error shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-on-error"></span>점검
+                </span>
+</td>
+<td class="py-2.5 px-2 text-center">
+<button class="expand-btn p-1 rounded hover:bg-error-container/40 text-error transition-colors" data-target="detail-i">
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+</td>
+</tr>
+<tr class="hidden bg-error-container/10" id="detail-i">
+<td class="p-space-lg" colspan="13">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md p-space-md bg-surface-container-lowest rounded-xl shadow-md">
+<div class="flex flex-col">
+<span class="font-badge-label text-badge-label text-error uppercase font-body-compact-bold">공사 기간 및 개요</span>
+<span class="font-body-compact-bold text-body-compact-bold mt-1 text-on-surface">2023-08-01 ~ 2026-12-31 (41개월)</span>
+<span class="font-badge-label text-badge-label text-secondary mt-1">지연 일수: 35일 / 마감 부문</span>
+</div>
+<div class="flex flex-col p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-body-compact-bold text-body-compact-bold text-error">[기록된 상황]</span>
+<p class="font-body-compact text-body-compact mt-1 text-on-surface-variant">
+                      해외 주문 커튼월 알루미늄 유니트 통관 및 선적 지연으로 외벽 마감 4개 층 공정 병목 발생. 내부 마감 동시 진행 차질.
+                    </p>
+</div>
+<div class="flex flex-col p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-body-compact-bold text-body-compact-bold text-on-surface">[계획된 대응]</span>
+<p class="font-body-compact text-body-compact mt-1 text-on-surface-variant">
+                      국내 대체 가공업체 비상 발주분 납품 시작 (10월 2주차 완료). 전문 설치반 3개 조 철야 시공 전환 승인.
+                    </p>
+</div>
+</div>
+</td>
+</tr>
+<!-- Site J (주의 - SPECIFIC PRD REQUIREMENT: 7월 0원 기록, 9월 정상 진행) -->
+<tr class="hover:bg-surface-container-low transition-colors duration-150 group" data-accumpaid="27000" data-contract="45000" data-diff="-1.2" data-monthpaid="1850" data-progresspaid="60.0" data-region="경기" data-site="현장 J" data-status="주의" data-type="공동주택">
+<td class="py-2.5 px-3 font-body-compact-bold text-on-surface flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+<span>현장 J (일산 에듀포레)</span>
+</td>
+<td class="py-2.5 px-2 text-secondary">경기</td>
+<td class="py-2.5 px-2">공동주택</td>
+<td class="py-2.5 px-2 text-on-surface-variant font-data-mono">지하주차장 방수 및 1층 슬래브</td>
+<td class="py-2.5 px-3 text-right font-data-mono">45,000</td>
+<td class="py-2.5 px-3 text-right font-data-mono">27,000</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-body-compact-bold text-on-surface">1,850</td>
+<td class="py-2.5 px-3 text-right font-data-mono">60.0%</td>
+<td class="py-2.5 px-3 text-right font-data-mono text-secondary">63.0%</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-body-compact-bold">61.8%</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-body-compact-bold text-on-secondary-container">-1.2pp</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-badge-label text-badge-label bg-secondary-container text-on-secondary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-on-secondary-container"></span>주의
+                </span>
+</td>
+<td class="py-2.5 px-2 text-center">
+<button class="expand-btn p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface transition-colors" data-target="detail-j">
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+</td>
+</tr>
+<tr class="hidden bg-surface-container-low/60" id="detail-j">
+<td class="p-space-lg" colspan="13">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+<div>
+<span class="font-badge-label text-badge-label text-secondary uppercase">공사 기간</span>
+<p class="font-body-compact-bold text-body-compact-bold mt-1">2024-02-01 ~ 2026-12-31 (35개월)</p>
+</div>
+<div>
+<span class="font-badge-label text-badge-label text-secondary uppercase">기록된 상황 [비고 이력]</span>
+<p class="font-body-compact text-body-compact mt-1 text-on-surface-variant">
+                      7월 당월기성액 0.0백만원 기록 (비고: "기성 확인 서류 보완"). 8~9월 감리 확인 완료 후 정상 청구 및 기성 집행 완료.
+                    </p>
+</div>
+<div>
+<span class="font-badge-label text-badge-label text-secondary uppercase">계획된 대응</span>
+<p class="font-body-compact text-body-compact mt-1 text-on-surface-variant">
+                      서류 검수 프로세스 자동화 적용 완료. 9월 정상 진행 중이며 잔여 공기 지연 없음.
+                    </p>
+</div>
+</div>
+</td>
+</tr>
+<!-- Site K (점검 - SPECIFIC PRD REQUIREMENT: 부산/오피스/골조 -5.4pp) -->
+<tr class="hover:bg-error-container/20 bg-error-container/10 transition-colors duration-150 group" data-accumpaid="32760" data-contract="63000" data-diff="-5.4" data-monthpaid="920" data-progresspaid="52.0" data-region="부산" data-site="현장 K" data-status="점검" data-type="오피스">
+<td class="py-2.5 px-3 font-body-compact-bold text-on-surface flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span class="text-error font-body-compact-bold">현장 K (부산 센텀 금융센터)</span>
+</td>
+<td class="py-2.5 px-2 text-secondary">부산</td>
+<td class="py-2.5 px-2">오피스</td>
+<td class="py-2.5 px-2 text-on-surface-variant font-data-mono">지상 18층 골조 및 코어 철근 배근</td>
+<td class="py-2.5 px-3 text-right font-data-mono">63,000</td>
+<td class="py-2.5 px-3 text-right font-data-mono">32,760</td>
+<td class="py-2.5 px-3 text-right font-data-mono">920</td>
+<td class="py-2.5 px-3 text-right font-data-mono">52.0%</td>
+<td class="py-2.5 px-3 text-right font-data-mono text-secondary">60.2%</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-body-compact-bold text-error">54.8%</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-body-compact-bold text-error text-[14px]">-5.4pp</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-badge-label text-badge-label bg-error text-on-error shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-on-error"></span>점검
+                </span>
+</td>
+<td class="py-2.5 px-2 text-center">
+<button class="expand-btn p-1 rounded hover:bg-error-container/40 text-error transition-colors" data-target="detail-k">
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+</td>
+</tr>
+<tr class="hidden bg-error-container/10" id="detail-k">
+<td class="p-space-lg" colspan="13">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md p-space-md bg-surface-container-lowest rounded-xl shadow-md">
+<div>
+<span class="font-badge-label text-badge-label text-error uppercase font-body-compact-bold">공사 기간</span>
+<p class="font-body-compact-bold text-body-compact-bold mt-1">2024-03-15 ~ 2027-05-31 (38개월)</p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-body-compact-bold text-body-compact-bold text-error">[기록된 상황]</span>
+<p class="font-body-compact text-body-compact mt-1 text-on-surface-variant">
+                      골조 코어 거푸집 인양 시 풍속 규제(초속 10m/s 이상)로 크레인 작업 일수 9일 중단. 주간 공정 만회율 저하.
+                    </p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-body-compact-bold text-body-compact-bold text-on-surface">[계획된 대응]</span>
+<p class="font-body-compact text-body-compact mt-1 text-on-surface-variant">
+                      자동상승 클라이밍 폼(ACS) 시스템 유압 점검 및 새벽 무풍 시간대 작업 허가 요청 승인. 10월 중 지연 2.0pp 회복 목표.
+                    </p>
+</div>
+</div>
+</td>
+</tr>
+<!-- Site L (정상) -->
+<tr class="hover:bg-surface-container-low transition-colors duration-150 group" data-accumpaid="53690" data-contract="59000" data-diff="+0.9" data-monthpaid="2600" data-progresspaid="91.0" data-region="인천" data-site="현장 L" data-status="정상" data-type="물류센터">
+<td class="py-2.5 px-3 font-body-compact-bold text-on-surface flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>현장 L (영종 항공화물 터미널)</span>
+</td>
+<td class="py-2.5 px-2 text-secondary">인천</td>
+<td class="py-2.5 px-2">물류센터</td>
+<td class="py-2.5 px-2 text-on-surface-variant font-data-mono">지붕 방수 마감 및 바닥 에폭시 코팅</td>
+<td class="py-2.5 px-3 text-right font-data-mono">59,000</td>
+<td class="py-2.5 px-3 text-right font-data-mono">53,690</td>
+<td class="py-2.5 px-3 text-right font-data-mono">2,600</td>
+<td class="py-2.5 px-3 text-right font-data-mono">91.0%</td>
+<td class="py-2.5 px-3 text-right font-data-mono text-secondary">91.5%</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-body-compact-bold">92.4%</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-body-compact-bold text-secondary">+0.9pp</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-badge-label text-badge-label bg-surface-container text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>정상
+                </span>
+</td>
+<td class="py-2.5 px-2 text-center">
+<button class="expand-btn p-1 rounded hover:bg-surface-container text-secondary hover:text-on-surface transition-colors" data-target="detail-l">
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+</td>
+</tr>
+<tr class="hidden bg-surface-container-low/60" id="detail-l">
+<td class="p-space-lg" colspan="13">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+<div>
+<span class="font-badge-label text-badge-label text-secondary uppercase">공사 기간</span>
+<p class="font-body-compact-bold text-body-compact-bold mt-1">2023-05-01 ~ 2026-10-31 (41개월)</p>
+</div>
+<div>
+<span class="font-badge-label text-badge-label text-secondary uppercase">기록된 상황</span>
+<p class="font-body-compact text-body-compact mt-1 text-on-surface-variant">발주처 예비검사 지적사항 14건 중 12건 보수 조치 완료.</p>
+</div>
+<div>
+<span class="font-badge-label text-badge-label text-secondary uppercase">계획된 대응</span>
+<p class="font-body-compact text-body-compact mt-1 text-on-surface-variant">준공 승인 필증 서류 본사 법무팀 사전 승인 완료 후 예정대로 10월 완공 확정.</p>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Bottom Pagination & Executive Tally Footer -->
+<div class="px-space-lg py-space-md bg-surface-container-low border-t border-surface-container flex flex-col md:flex-row items-center justify-between gap-space-md select-none">
+<div class="flex items-center gap-space-md">
+<span class="font-body-compact-bold text-body-compact-bold text-on-surface" id="statusCountText">
+            총 12개 현장 중: 정상 6개소 · 주의 3개소 · 점검 3개소
+          </span>
+<span class="h-3 w-px bg-outline-variant hidden sm:inline-block"></span>
+<span class="font-badge-label text-badge-label text-secondary">
+            누적 계약 총액: 798,200 백만원 | 총 기성 집행률: 67.8%
+          </span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1 rounded bg-surface-container-lowest text-on-surface font-body-compact-bold text-body-compact-bold shadow-sm hover:bg-surface-container transition-colors disabled:opacity-50" disabled="">
+            이전
+          </button>
+<span class="px-space-md py-1 rounded bg-primary-container text-on-primary font-body-compact-bold text-body-compact-bold shadow-sm">
+            1
+          </span>
+<button class="px-space-md py-1 rounded bg-surface-container-lowest text-on-surface font-body-compact-bold text-body-compact-bold shadow-sm hover:bg-surface-container transition-colors disabled:opacity-50" disabled="">
+            다음
+          </button>
+<span class="font-badge-label text-badge-label text-secondary ml-2">전체 12건 표시 중 (1/1 페이지)</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  (function initDashboardInteractions() {
+    const tableBody = document.getElementById('tableBody');
+    const toggleAllBtn = document.getElementById('toggleAllBtn');
+    const toggleIcon = document.getElementById('toggleIcon');
+    const toggleText = document.getElementById('toggleText');
+    const searchInput = document.getElementById('searchInput');
+    const regionFilter = document.getElementById('regionFilter');
+    const typeFilter = document.getElementById('typeFilter');
+    const exportCsvBtn = document.getElementById('exportCsvBtn');
+
+    let allExpanded = false;
+
+    // Expand / Collapse Single Row
+    tableBody.addEventListener('click', (e) => {
+      const btn = e.target.closest('.expand-btn');
+      if (!btn) return;
+      const targetId = btn.getAttribute('data-target');
+      const detailRow = document.getElementById(targetId);
+      const icon = btn.querySelector('.material-symbols-outlined');
+      if (detailRow) {
+        const isHidden = detailRow.classList.contains('hidden');
+        if (isHidden) {
+          detailRow.classList.remove('hidden');
+          icon.textContent = 'expand_less';
+        } else {
+          detailRow.classList.add('hidden');
+          icon.textContent = 'expand_more';
+        }
+      }
+    });
+
+    // Toggle All Rows
+    toggleAllBtn.addEventListener('click', () => {
+      allExpanded = !allExpanded;
+      const detailRows = tableBody.querySelectorAll('tr[id^="detail-"]');
+      const buttons = tableBody.querySelectorAll('.expand-btn .material-symbols-outlined');
+
+      detailRows.forEach(row => {
+        if (allExpanded) {
+          row.classList.remove('hidden');
+        } else {
+          row.classList.add('hidden');
+        }
+      });
+
+      buttons.forEach(icon => {
+        icon.textContent = allExpanded ? 'expand_less' : 'expand_more';
+      });
+
+      toggleIcon.textContent = allExpanded ? 'unfold_less' : 'unfold_more';
+      toggleText.textContent = allExpanded ? '전체 행 접기' : '전체 행 펼치기';
+    });
+
+    // Table Filter and Search
+    function filterTable() {
+      const q = searchInput.value.trim().toLowerCase();
+      const reg = regionFilter.value;
+      const typ = typeFilter.value;
+      const rows = tableBody.querySelectorAll('tr:not([id^="detail-"])');
+
+      let visibleCount = 0;
+      let normalCnt = 0;
+      let cautionCnt = 0;
+      let criticalCnt = 0;
+
+      rows.forEach(row => {
+        const site = (row.getAttribute('data-site') || '').toLowerCase();
+        const fullText = row.innerText.toLowerCase();
+        const rReg = row.getAttribute('data-region') || '';
+        const rTyp = row.getAttribute('data-type') || '';
+        const status = row.getAttribute('data-status') || '';
+        const targetDetail = document.getElementById(row.querySelector('.expand-btn')?.getAttribute('data-target'));
+
+        const matchSearch = !q || fullText.includes(q) || site.includes(q);
+        const matchRegion = reg === 'ALL' || rReg === reg;
+        const matchType = typ === 'ALL' || rTyp === typ;
+
+        if (matchSearch && matchRegion && matchType) {
+          row.style.display = '';
+          visibleCount++;
+          if (status === '정상') normalCnt++;
+          else if (status === '주의') cautionCnt++;
+          else if (status === '점검') criticalCnt++;
+        } else {
+          row.style.display = 'none';
+          if (targetDetail) targetDetail.style.display = 'none';
+        }
+      });
+
+      const countText = document.getElementById('statusCountText');
+      if (countText) {
+        countText.textContent = `조회 결과 ${visibleCount}개 현장 중: 정상 ${normalCnt}개소 · 주의 ${cautionCnt}개소 · 점검 ${criticalCnt}개소`;
+      }
+    }
+
+    searchInput.addEventListener('input', filterTable);
+    regionFilter.addEventListener('change', filterTable);
+    typeFilter.addEventListener('change', filterTable);
+
+    // Sorting Functionality
+    const sortHeaders = document.querySelectorAll('th[data-sort]');
+    let currentSort = { column: null, asc: true };
+
+    sortHeaders.forEach(th => {
+      th.addEventListener('click', () => {
+        const col = th.getAttribute('data-sort');
+        if (currentSort.column === col) {
+          currentSort.asc = !currentSort.asc;
+        } else {
+          currentSort.column = col;
+          currentSort.asc = true;
+        }
+
+        const dataPairs = [];
+        const rows = Array.from(tableBody.querySelectorAll('tr:not([id^="detail-"])'));
+
+        rows.forEach(row => {
+          const detailRow = document.getElementById(row.querySelector('.expand-btn')?.getAttribute('data-target'));
+          dataPairs.push({ row, detailRow });
+        });
+
+        dataPairs.sort((a, b) => {
+          let valA = a.row.getAttribute(`data-${col.toLowerCase()}`);
+          let valB = b.row.getAttribute(`data-${col.toLowerCase()}`);
+
+          if (col === 'contract' || col === 'accumPaid' || col === 'monthPaid' || col === 'progressPaid' || col === 'diff') {
+            valA = parseFloat(valA) || 0;
+            valB = parseFloat(valB) || 0;
+          }
+
+          if (valA < valB) return currentSort.asc ? -1 : 1;
+          if (valA > valB) return currentSort.asc ? 1 : -1;
+          return 0;
+        });
+
+        dataPairs.forEach(pair => {
+          tableBody.appendChild(pair.row);
+          if (pair.detailRow) tableBody.appendChild(pair.detailRow);
+        });
+      });
+    });
+
+    // CSV Export Handler
+    exportCsvBtn.addEventListener('click', () => {
+      const headers = [
+        "현장코드/현장명", "지역", "공사유형", "주요공종", "계약금액(백만원)", 
+        "누적기성액(백만원)", "당월기성액(백만원)", "기성률(%)", "계획공정률(%)", 
+        "실제공정률(%)", "공정차이(pp)", "공정상태", "착공일자", "준공예정일", 
+        "총공사개월", "현장소장", "감리단", "기록된상황", "계획된대응"
+      ];
+
+      // Build simulated 19-column enterprise CSV structure
+      const csvRows = [headers.join(",")];
+      const rows = tableBody.querySelectorAll('tr:not([id^="detail-"])');
+
+      rows.forEach(row => {
+        if (row.style.display === 'none') return;
+        const site = `"${row.getAttribute('data-site')}"`;
+        const reg = `"${row.getAttribute('data-region')}"`;
+        const typ = `"${row.getAttribute('data-type')}"`;
+        const cells = row.querySelectorAll('td');
+        const task = `"${cells[3]?.innerText.trim() || ''}"`;
+        const contract = row.getAttribute('data-contract');
+        const accumPaid = row.getAttribute('data-accumpaid');
+        const monthPaid = row.getAttribute('data-monthpaid');
+        const progressPaid = row.getAttribute('data-progresspaid');
+        const plan = cells[8]?.innerText.trim().replace('%','') || '0';
+        const actual = cells[9]?.innerText.trim().replace('%','') || '0';
+        const diff = row.getAttribute('data-diff');
+        const status = `"${row.getAttribute('data-status')}"`;
+
+        const rowCsv = [
+          site, reg, typ, task, contract, accumPaid, monthPaid, progressPaid,
+          plan, actual, diff, status,
+          "2024-01-01", "2027-01-01", "36", "현장책임자", "통합감리단",
+          "\"현장 당월 보고서 정상 접수 완료\"", "\"공정률 관리 계획 이행\""
+        ];
+        csvRows.push(rowCsv.join(","));
+      });
+
+      const blob = new Blob(["\uFEFF" + csvRows.join("\n")], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `현장별_공정기성비교표_2026-09_${new Date().toISOString().slice(0,10)}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    });
+  })();
+</script></main><footer class="w-full bg-surface-container-low py-space-lg"><div class="w-full px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-compact text-body-compact"><span>© 2026 건설공정기성통합관리시스템 HQ Enterprise Operations. All rights reserved.</span><div class="flex items-center gap-space-md font-badge-label text-badge-label text-secondary"><span>데이터 갱신 주기: 실시간</span><span>본사 감리망 V4.8</span><span>통합 보안 인증 완료</span></div></div></footer></body></html>

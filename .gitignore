@@ -1,0 +1,10 @@
+# API 키 등 환경 설정 파일은 GitHub에 올리지 않습니다. (견본인 .env.example만 올립니다)
+.env*
+!.env.example
+
+# 도구가 만드는 폴더·파일
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts

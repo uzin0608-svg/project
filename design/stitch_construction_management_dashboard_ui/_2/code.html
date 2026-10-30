@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter,+Pretendard,+-apple-system,+sans-serif:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-variant":"#e0e3e5","on-secondary-fixed-variant":"#3c475a","tertiary-fixed":"#dbe1ff","on-primary":"#ffffff","surface-dim":"#d8dadc","surface":"#f7f9fb","surface-container-highest":"#e0e3e5","primary-fixed-dim":"#bec6e0","outline-variant":"#c6c6cd","on-primary-container":"#7c839b","on-tertiary-container":"#497cff","inverse-primary":"#bec6e0","secondary":"#545f73","on-background":"#191c1e","surface-container":"#eceef0","secondary-fixed-dim":"#bcc7de","surface-container-high":"#e6e8ea","tertiary-fixed-dim":"#b4c5ff","on-secondary-fixed":"#111c2d","surface-container-low":"#f2f4f6","inverse-surface":"#2d3133","on-tertiary":"#ffffff","primary-fixed":"#dae2fd","secondary-container":"#d5e0f8","error":"#ba1a1a","surface-container-lowest":"#ffffff","on-secondary-container":"#586377","on-tertiary-fixed":"#00174b","primary":"#000000","on-tertiary-fixed-variant":"#003ea8","tertiary":"#000000","on-surface-variant":"#45464d","outline":"#76777d","surface-bright":"#f7f9fb","secondary-fixed":"#d8e3fb","on-error":"#ffffff","background":"#f7f9fb","on-error-container":"#93000a","tertiary-container":"#00174b","inverse-on-surface":"#eff1f3","on-secondary":"#ffffff","on-primary-fixed-variant":"#3f465c","on-surface":"#191c1e","on-primary-fixed":"#131b2e","surface-tint":"#565e74","primary-container":"#131b2e","error-container":"#ffdad6"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-xl":"1.75rem",margin:"1rem","space-lg":"1.25rem","space-xs":"0.25rem","space-sm":"0.5rem","space-md":"0.75rem","margin-desktop":"1.75rem","gutter-desktop":"1.5rem",gutter:"1rem"},fontFamily:{"headline-title":["\"Inter, Pretendard, -apple-system, sans-serif\""],"body-compact-bold":["\"Inter, Pretendard, -apple-system, sans-serif\""],"body-medium":["\"Inter, Pretendard, -apple-system, sans-serif\""],"badge-label":["\"Inter, Pretendard, -apple-system, sans-serif\""],"body-compact":["\"Inter, Pretendard, -apple-system, sans-serif\""],"headline-kpi":["\"Inter, Pretendard, -apple-system, sans-serif\""],"data-mono":["\"JetBrains Mono, Pretendard, monospace\""],"headline-kpi-mobile":["\"Inter, Pretendard, -apple-system, sans-serif\""],"section-header":["\"Inter, Pretendard, -apple-system, sans-serif\""],"body-default":["\"Inter, Pretendard, -apple-system, sans-serif\""]},fontSize:{"headline-title":["20px",{lineHeight:"28px",fontWeight:"600"}],"body-compact-bold":["13px",{lineHeight:"18px",fontWeight:"600"}],"body-medium":["14px",{lineHeight:"20px",fontWeight:"500"}],"badge-label":["11px",{lineHeight:"14px",fontWeight:"600"}],"body-compact":["13px",{lineHeight:"18px",fontWeight:"400"}],"headline-kpi":["32px",{lineHeight:"38px",fontWeight:"700"}],"data-mono":["13px",{lineHeight:"18px",fontWeight:"500"}],"headline-kpi-mobile":["24px",{lineHeight:"30px",fontWeight:"700"}],"section-header":["16px",{lineHeight:"24px",fontWeight:"600"}],"body-default":["14px",{lineHeight:"20px",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-body-default text-on-surface antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-margin-desktop flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-xl"><div class="flex items-center gap-space-md"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1V4y-p-mHZMnst5imB1XHnEZf3bW-0JLNNI6Kov1dq5A84InB_U1gscRHTbOQHFWxygn9o41K_4wJcRjODGwo3MSyqx_O521VMe4UdVoyp_qd9PNqjGe65B9_G9K1aM9ZTEWY1h32bUROj0iLMr1Ng8gwENzhzPL6TeQGrvZLWsekfKrXPRKl6RTDyyEvYOCXcbpQvyEeSLQ-W4ItieCEhKsTv0-TU0CqZcK7DDO60"/><div class="flex items-center gap-space-sm"><span class="font-section-header text-section-header text-on-surface tracking-tight whitespace-nowrap">현장별 공정·기성 대시보드</span><span class="px-space-sm py-space-xs rounded bg-surface-container-high text-on-surface-variant font-badge-label text-badge-label whitespace-nowrap">본사 총괄 관리</span></div></div><div class="h-4 w-px bg-outline-variant"></div><nav class="flex items-center gap-space-xs" data-active-classes="bg-surface-container text-on-surface font-body-compact-bold rounded-lg shadow-sm"><a aria-current="page" class="px-space-md py-space-xs transition-colors whitespace-nowrap bg-surface-container text-on-surface font-body-compact-bold rounded-lg shadow-sm" data-path="summary" href="#">현황 요약</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface font-body-compact text-body-compact transition-colors whitespace-nowrap" data-path="comparison" href="#">현장별 비교표</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface font-body-compact text-body-compact transition-colors whitespace-nowrap" data-path="ai-query" href="#">AI에게 묻기</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-xs rounded bg-surface-container-low text-on-surface-variant font-data-mono text-data-mono"><span class="w-2 h-2 rounded-full bg-secondary"></span><span>2026년 9월 기준 (12개 현장 정상 로드)</span></div><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container-lowest text-secondary hover:bg-surface-container-low hover:text-on-surface font-body-compact-bold text-body-compact-bold shadow-[0_1px_2px_rgba(0,0,0,0.05)] transition-colors whitespace-nowrap" type="button"><span class="material-symbols-outlined text-secondary" style="font-size:16px;">upload_file</span><span>자료 가져오기</span></button><div class="h-4 w-px bg-outline-variant"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-7 h-7 rounded-full bg-primary-container text-on-primary font-body-compact-bold text-body-compact flex items-center justify-center tracking-tight">김</div><div class="flex flex-col text-left"><span class="font-body-compact-bold text-body-compact-bold text-on-surface leading-tight whitespace-nowrap">김영수 전무</span><span class="font-badge-label text-badge-label text-secondary leading-tight whitespace-nowrap">현장총괄본부</span></div></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-64px)]"><div class="flex flex-col w-full">
+<div class="w-full px-margin-desktop py-space-xl flex flex-col gap-space-xl">
+<!-- Top Context & Page Navigation Track -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm text-secondary font-badge-label text-badge-label">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary" style="font-size:14px;">database</span>
+<span>데이터 파이프라인 관리</span>
+</span>
+<span class="text-outline-variant">•</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">SCHEMA_VERSION: v4.8.2-PROD</span>
+<span class="text-outline-variant">•</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-badge-label text-badge-label">원자적 트랜잭션 보장 (ACID)</span>
+</div>
+<div class="flex items-baseline gap-space-md">
+<h1 class="font-headline-title text-headline-title text-on-surface tracking-tight">공정·기성 데이터 가져오기 및 정합성 검증</h1>
+<span class="font-data-mono text-data-mono text-secondary">ID: IMP-202609-HQ01</span>
+</div>
+<p class="font-body-default text-body-default text-on-surface-variant max-w-4xl">
+          전국 12개 현장의 12개월(2025.10 ~ 2026.09) 누적 및 당월 실적 시계열 데이터를 동기화합니다. 기존 데이터 손상 방지 가상화 파이프라인을 통해 무결성이 승인된 데이터셋만 대시보드에 최종 반영됩니다.
+        </p>
+</div>
+<!-- Current Operational State Pill -->
+<div class="flex items-center gap-space-md bg-surface-container-lowest p-space-sm rounded-xl shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined" style="font-size: 22px;">shield_lock</span>
+</div>
+<div class="flex flex-col pr-space-sm">
+<span class="font-badge-label text-badge-label text-secondary uppercase tracking-wider">안전 격리 모드 활성화</span>
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-body-compact-bold text-body-compact-bold text-on-surface">운영 DB 144건 스냅샷 유지 중</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Asymmetric Upper Section: Upload Zone + Safety Principles & Live Status -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Upload Dropzone (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="relative group bg-surface-container-lowest rounded-xl p-space-xl shadow-sm transition-all duration-200 cursor-pointer overflow-hidden" id="drop-zone">
+<div class="absolute -right-8 -top-8 w-36 h-36 bg-surface-container rounded-full opacity-40 pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+<div class="relative z-10 flex flex-col items-center text-center gap-space-md py-space-lg">
+<div class="w-16 h-16 rounded-xl bg-surface-container-high group-hover:bg-primary group-hover:text-on-primary text-on-surface flex items-center justify-center transition-colors shadow-sm">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform" style="font-size:32px;">cloud_upload</span>
+</div>
+<div class="flex flex-col gap-space-xs max-w-md">
+<span class="font-section-header text-section-header text-on-surface font-semibold">
+                CSV 또는 JSON 파일을 마우스로 끌어다 놓으세요
+              </span>
+<p class="font-body-compact text-body-compact text-on-surface-variant">
+                12개 현장 시계열 매트릭스 (144행 x 15개 필수 컬럼) 무결성 사전 검사가 백그라운드 스레드에서 즉시 실행됩니다.
+              </p>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-space-sm pt-space-xs">
+<label class="cursor-pointer">
+<input accept=".csv, .json" class="hidden" id="file-input" type="file"/>
+<span class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-primary-container text-on-primary font-body-compact-bold text-body-compact-bold shadow-sm hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined" style="font-size:18px;">folder_open</span>
+                  파일 직접 선택
+                </span>
+</label>
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-body-compact-bold text-body-compact-bold transition-colors" id="btn-load-mock" type="button">
+<span class="material-symbols-outlined" style="font-size:18px;">auto_fix_high</span>
+                표준 데이터셋(2026-09) 로드
+              </button>
+</div>
+<div class="flex items-center gap-space-lg pt-space-md text-secondary font-badge-label text-badge-label">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined" style="font-size:14px;">description</span>
+                최대 용량 25MB 이하
+              </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined" style="font-size:14px;">lock_clock</span>
+                클라이언트 즉각 메모리 파싱
+              </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined" style="font-size:14px;">verified_user</span>
+                SHA-256 해시 검증
+              </span>
+</div>
+</div>
+</div>
+<!-- Principles Card -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm flex items-start gap-space-md">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined" style="font-size:18px;">verified</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-body-compact-bold text-body-compact-bold text-on-surface">중복 적재 원천 차단 및 무결성 보존 원칙</span>
+<p class="font-body-compact text-body-compact text-on-surface-variant leading-relaxed">
+              CSV를 가져온 뒤 같은 JSON을 가져와도 144행으로 유지되며, 중복 적재되지 않습니다. 파싱 오류가 발생하거나 작업을 취소하더라도 기존 정상 대시보드 데이터는 메모리 샌드박스에서 즉각 롤백되어 완벽히 보존됩니다.
+            </p>
+</div>
+</div>
+</div>
+<!-- Live Pipeline Telemetry & File Status (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Staged File Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-size:24px;">draft</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-compact-bold text-body-compact-bold text-on-surface" id="current-filename">HQ_Consolidated_Financials_2026Q3.csv</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-secondary font-data-mono text-badge-label">UTF-8 CRLF</span>
+</div>
+<span class="font-data-mono text-badge-label text-secondary">384.2 KB • 체크섬 검사 통과 (98a4...e21)</span>
+</div>
+</div>
+<span class="px-space-sm py-space-xs rounded-full bg-surface-container-highest text-on-surface font-badge-label text-badge-label flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container animate-pulse"></span>
+              검증 완료
+            </span>
+</div>
+<!-- Staged Metric Compact Bento -->
+<div class="grid grid-cols-3 gap-space-sm py-space-xs">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-badge-label text-badge-label text-secondary">총 데이터 행</span>
+<span class="font-data-mono text-headline-title text-on-surface font-bold">144<span class="text-body-compact font-normal text-secondary ml-0.5">행</span></span>
+<span class="font-badge-label text-badge-label text-secondary mt-1">12현장 × 12개월</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-badge-label text-badge-label text-secondary">유효 컬럼 수</span>
+<span class="font-data-mono text-headline-title text-on-surface font-bold">15<span class="text-body-compact font-normal text-secondary ml-0.5">개</span></span>
+<span class="font-badge-label text-badge-label text-secondary mt-1">필수 헤더 100% 매핑</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-badge-label text-badge-label text-secondary">결측치/이상값</span>
+<span class="font-data-mono text-headline-title text-on-surface font-bold">0<span class="text-body-compact font-normal text-secondary ml-0.5">건</span></span>
+<span class="font-badge-label text-badge-label text-secondary mt-1">예외 규칙 2건 적용</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-secondary font-body-compact text-body-compact pt-space-xs">
+<span class="flex items-center gap-1 font-badge-label text-badge-label">
+<span class="material-symbols-outlined text-secondary" style="font-size:16px;">history</span>
+              직전 최종 동기화: 2026-09-28 14:15:02 (총괄본부)
+            </span>
+<button class="text-on-surface-variant hover:text-on-surface font-body-compact-bold text-body-compact-bold underline decoration-outline-variant underline-offset-4" id="btn-toggle-diff" type="button">
+              차분 내역 토글
+            </button>
+</div>
+</div>
+<!-- Simulated Visual Pipeline Ring SVG -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<!-- Inline SVG Gauge (Under 2KB, semantic tokens) -->
+<svg class="w-12 h-12 flex-shrink-0" viewbox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="100, 100" stroke-linecap="round" stroke-width="3.5"></path>
+<text class="font-data-mono" fill="currentColor" font-size="7.5" font-weight="700" text-anchor="middle" x="18" y="20.5">100%</text>
+</svg>
+<div class="flex flex-col">
+<span class="font-body-compact-bold text-body-compact-bold text-on-surface">원천 데이터 사전 적합성 완벽</span>
+<span class="font-badge-label text-badge-label text-secondary">메모리 가상 캐시에 144건 인덱싱 대기 완료</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary" style="font-size:20px;">check_circle</span>
+</div>
+</div>
+</div>
+<!-- Error State Simulation Alert Card (PRD Specification Item #3) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm border-l-4 border-error flex flex-col gap-space-md" id="error-simulation-card">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 h-7 rounded bg-error-container text-error flex items-center justify-center font-bold">
+<span class="material-symbols-outlined" style="font-size:18px;">error</span>
+</span>
+<div class="flex items-center gap-space-sm">
+<span class="font-section-header text-section-header text-error">오류 파일 검증 실패 시뮬레이션 (거부 테스트 예시)</span>
+<span class="px-space-xs py-0.5 rounded bg-error-container text-error font-badge-label text-badge-label">동기화 거절 (BLOCKED)</span>
+</div>
+</div>
+<button class="text-secondary hover:text-on-surface font-badge-label text-badge-label" onclick="document.getElementById('error-simulation-card').classList.toggle('opacity-50')" type="button">
+          [상태 시뮬레이션 숨기기/보기]
+        </button>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md bg-surface-container-low p-space-md rounded-lg">
+<div class="lg:col-span-8 flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-error font-body-compact-bold text-body-compact-bold">
+<span class="material-symbols-outlined" style="font-size:16px;">report_problem</span>
+<span>오류 내용: 24행 '현장 X' 알 수 없는 코드 및 87행 공정률 음수(-4.2%) 감지</span>
+</div>
+<p class="font-body-compact text-body-compact text-on-surface-variant leading-relaxed">
+            안내: 잘못된 파일로 인해 기존 정상 데이터가 변경되지 않았으며, 현재 대시보드 데이터(2026-09)가 안전하게 유지됩니다.
+          </p>
+</div>
+<div class="lg:col-span-4 flex items-center justify-end gap-space-sm">
+<button class="px-space-md py-space-xs rounded bg-surface-container-lowest text-on-surface font-body-compact-bold text-body-compact-bold shadow-sm hover:bg-surface-container transition-colors" type="button">
+            오류 리포트 JSON 받기
+          </button>
+<button class="px-space-md py-space-xs rounded bg-surface-container-high text-on-surface-variant font-body-compact text-body-compact hover:text-on-surface transition-colors" type="button">
+            오류 행 2건 격리 검토
+          </button>
+</div>
+</div>
+</div>
+<!-- Data Validation Checklist & Table Preview (PRD Specification Item #2) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Table Header & Validation Checklist Section -->
+<div class="p-space-lg flex flex-col gap-space-md bg-surface-container-lowest">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-space-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-section-header text-section-header text-on-surface">데이터 사전 검증 결과 & 미리보기 테이블</span>
+<span class="px-space-sm py-space-xs rounded-full bg-surface-container-high text-on-surface font-badge-label text-badge-label font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary" style="font-size:14px;">task_alt</span>
+                정상 파일 검증 완료 (144행 · 15개 필수 열 일치)
+              </span>
+</div>
+<span class="font-body-compact text-body-compact text-on-surface-variant">
+              파싱 완료된 144건 중 대표 현장(A~L)의 핵심 시계열 구간을 샘플링하여 렌더링합니다.
+            </span>
+</div>
+<!-- Quick Filters -->
+<div class="flex items-center gap-space-xs">
+<div class="flex items-center bg-surface-container-low rounded-lg p-0.5">
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest font-body-compact-bold text-body-compact-bold text-on-surface shadow-sm" type="button">전체 12현장</button>
+<button class="px-space-sm py-1 rounded text-secondary hover:text-on-surface font-body-compact text-body-compact" type="button">현장 A~F</button>
+<button class="px-space-sm py-1 rounded text-secondary hover:text-on-surface font-body-compact text-body-compact" type="button">현장 G~L</button>
+</div>
+<span class="h-4 w-px bg-outline-variant mx-space-xs"></span>
+<input class="h-8 px-space-sm bg-surface-container-low rounded-lg font-body-compact text-body-compact text-on-surface placeholder:text-secondary focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-secondary transition-all" placeholder="현장 코드 또는 월 검색 (예: 2026-07)" type="text"/>
+</div>
+</div>
+<!-- Strict Checklist Matrix (PRD Item #2 Detailed) -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary mt-0.5" style="font-size:16px;">check_circle</span>
+<div class="flex flex-col">
+<span class="font-body-compact-bold text-body-compact-bold text-on-surface">12개 현장 코드(A~L)</span>
+<span class="font-badge-label text-badge-label text-secondary">표준 마스터 매핑 일치 (100%)</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary mt-0.5" style="font-size:16px;">check_circle</span>
+<div class="flex flex-col">
+<span class="font-body-compact-bold text-body-compact-bold text-on-surface">2025-10 ~ 2026-09</span>
+<span class="font-badge-label text-badge-label text-secondary">연속 12개월 결측 없음</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary mt-0.5" style="font-size:16px;">check_circle</span>
+<div class="flex flex-col">
+<span class="font-body-compact-bold text-body-compact-bold text-on-surface">누적기성액 & 공정률</span>
+<span class="font-badge-label text-badge-label text-secondary">유효 범위 (0.0% ~ 100.0%)</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary mt-0.5" style="font-size:16px;">check_circle</span>
+<div class="flex flex-col">
+<span class="font-body-compact-bold text-body-compact-bold text-on-surface">2025-10 당월기성액</span>
+<span class="font-badge-label text-badge-label text-secondary">'계산 불가(N/A)' 규칙 적용</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary mt-0.5" style="font-size:16px;">check_circle</span>
+<div class="flex flex-col">
+<span class="font-body-compact-bold text-body-compact-bold text-on-surface">현장 J 7월 당월기성액</span>
+<span class="font-badge-label text-badge-label text-secondary">0.0 정규값 확인 완료</span>
+</div>
+</div>
+</div>
+</div>
+<!-- High-Density Tabular Preview -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-secondary font-badge-label text-badge-label tracking-wider uppercase h-9">
+<th class="px-space-md py-space-xs font-semibold whitespace-nowrap">행번호</th>
+<th class="px-space-md py-space-xs font-semibold whitespace-nowrap">현장 코드</th>
+<th class="px-space-md py-space-xs font-semibold whitespace-nowrap">현장명</th>
+<th class="px-space-md py-space-xs font-semibold whitespace-nowrap">대상 월</th>
+<th class="px-space-md py-space-xs font-semibold whitespace-nowrap text-right">계획 공정률</th>
+<th class="px-space-md py-space-xs font-semibold whitespace-nowrap text-right">실적 공정률</th>
+<th class="px-space-md py-space-xs font-semibold whitespace-nowrap text-right">공정 차이(pp)</th>
+<th class="px-space-md py-space-xs font-semibold whitespace-nowrap text-right">누적 기성액(억원)</th>
+<th class="px-space-md py-space-xs font-semibold whitespace-nowrap text-right">당월 기성액(억원)</th>
+<th class="px-space-md py-space-xs font-semibold whitespace-nowrap text-center">검증 상태</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high font-body-compact text-body-compact text-on-surface">
+<!-- Row 1: Site A - Initial boundary (2025-10 Rule) -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="px-space-md py-space-xs font-data-mono text-secondary">001</td>
+<td class="px-space-md py-space-xs font-data-mono font-bold text-on-surface">SITE-A</td>
+<td class="px-space-md py-space-xs font-medium whitespace-nowrap">세종 정부 제2청사 복합단지</td>
+<td class="px-space-md py-space-xs font-data-mono">2025-10</td>
+<td class="px-space-md py-space-xs font-data-mono text-right text-secondary">42.5%</td>
+<td class="px-space-md py-space-xs font-data-mono text-right font-semibold">41.8%</td>
+<td class="px-space-md py-space-xs font-data-mono text-right text-secondary">-0.7</td>
+<td class="px-space-md py-space-xs font-data-mono text-right">1,240.0</td>
+<td class="px-space-md py-space-xs font-data-mono text-right">
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-secondary font-badge-label text-badge-label">계산 불가 (기준월)</span>
+</td>
+<td class="px-space-md py-space-xs text-center">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-badge-label text-badge-label">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>정상 (규칙적용)
+                </span>
+</td>
+</tr>
+<!-- Row 2: Site A - Steady state -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="px-space-md py-space-xs font-data-mono text-secondary">002</td>
+<td class="px-space-md py-space-xs font-data-mono font-bold text-on-surface">SITE-A</td>
+<td class="px-space-md py-space-xs font-medium whitespace-nowrap">세종 정부 제2청사 복합단지</td>
+<td class="px-space-md py-space-xs font-data-mono">2025-11</td>
+<td class="px-space-md py-space-xs font-data-mono text-right text-secondary">48.0%</td>
+<td class="px-space-md py-space-xs font-data-mono text-right font-semibold">47.5%</td>
+<td class="px-space-md py-space-xs font-data-mono text-right text-secondary">-0.5</td>
+<td class="px-space-md py-space-xs font-data-mono text-right">1,385.2</td>
+<td class="px-space-md py-space-xs font-data-mono text-right font-semibold">145.2</td>
+<td class="px-space-md py-space-xs text-center">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-badge-label text-badge-label">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>정상
+                </span>
+</td>
+</tr>
+<!-- Row 3: Site B -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="px-space-md py-space-xs font-data-mono text-secondary">013</td>
+<td class="px-space-md py-space-xs font-data-mono font-bold text-on-surface">SITE-B</td>
+<td class="px-space-md py-space-xs font-medium whitespace-nowrap">송도 바이오 메디컬 캠퍼스 3차</td>
+<td class="px-space-md py-space-xs font-data-mono">2026-04</td>
+<td class="px-space-md py-space-xs font-data-mono text-right text-secondary">62.0%</td>
+<td class="px-space-md py-space-xs font-data-mono text-right font-semibold">63.1%</td>
+<td class="px-space-md py-space-xs font-data-mono text-right text-on-surface-variant">+1.1</td>
+<td class="px-space-md py-space-xs font-data-mono text-right">2,890.4</td>
+<td class="px-space-md py-space-xs font-data-mono text-right font-semibold">210.0</td>
+<td class="px-space-md py-space-xs text-center">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-badge-label text-badge-label">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>정상
+                </span>
+</td>
+</tr>
+<!-- Row 4: Site J - Specific PRD Rule Check (July Monthly Billing 0.0) -->
+<tr class="bg-surface-container-high/40 hover:bg-surface-container-high transition-colors">
+<td class="px-space-md py-space-xs font-data-mono text-secondary">118</td>
+<td class="px-space-md py-space-xs font-data-mono font-bold text-on-surface">SITE-J</td>
+<td class="px-space-md py-space-xs font-medium whitespace-nowrap">판교 데이터센터 신축공사</td>
+<td class="px-space-md py-space-xs font-data-mono">2026-07</td>
+<td class="px-space-md py-space-xs font-data-mono text-right text-secondary">85.0%</td>
+<td class="px-space-md py-space-xs font-data-mono text-right font-semibold">84.8%</td>
+<td class="px-space-md py-space-xs font-data-mono text-right text-secondary">-0.2</td>
+<td class="px-space-md py-space-xs font-data-mono text-right">4,520.0</td>
+<td class="px-space-md py-space-xs font-data-mono text-right font-bold text-on-surface">
+                0.0 <span class="text-badge-label font-normal text-secondary">(인허가 보류)</span>
+</td>
+<td class="px-space-md py-space-xs text-center">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface font-badge-label text-badge-label">
+<span class="w-1.5 h-1.5 rounded-full bg-on-surface"></span>0.0 정규값 확인
+                </span>
+</td>
+</tr>
+<!-- Row 5: Site L - Latest Target Month (2026-09) -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="px-space-md py-space-xs font-data-mono text-secondary">144</td>
+<td class="px-space-md py-space-xs font-data-mono font-bold text-on-surface">SITE-L</td>
+<td class="px-space-md py-space-xs font-medium whitespace-nowrap">여수 항만 배후물류 스마트센터</td>
+<td class="px-space-md py-space-xs font-data-mono">2026-09</td>
+<td class="px-space-md py-space-xs font-data-mono text-right text-secondary">94.2%</td>
+<td class="px-space-md py-space-xs font-data-mono text-right font-semibold">92.0%</td>
+<td class="px-space-md py-space-xs font-data-mono text-right text-error font-medium">-2.2</td>
+<td class="px-space-md py-space-xs font-data-mono text-right">3,142.8</td>
+<td class="px-space-md py-space-xs font-data-mono text-right font-semibold">188.5</td>
+<td class="px-space-md py-space-xs text-center">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-badge-label text-badge-label">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>최신 종단값 일치
+                </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Preview Footer Pagination/Record Indicator -->
+<div class="px-space-lg py-space-sm bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm text-secondary font-badge-label text-badge-label">
+<div class="flex items-center gap-space-md">
+<span>미리보기 표시: 5건 / 총 144건 (A01~L12 전수 파싱 성공)</span>
+<span class="hidden md:inline">•</span>
+<span class="hidden md:inline font-data-mono">메모리 점유율: 4.1MB</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-body-compact-bold text-body-compact-bold shadow-sm" type="button">
+            미리보기 전체 144행 펼치기
+          </button>
+</div>
+</div>
+</div>
+<!-- Bottom Action Ribbon (PRD Specification Item #4) -->
+<div class="sticky bottom-4 z-40 bg-surface-container-lowest p-space-md rounded-xl shadow-md flex flex-col md:flex-row items-center justify-between gap-space-md">
+<!-- Primary Core Commit Controls -->
+<div class="flex items-center gap-space-sm w-full md:w-auto">
+<button class="flex-1 md:flex-none flex items-center justify-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-primary text-on-primary font-body-compact-bold text-body-compact-bold shadow-sm hover:opacity-90 transition-opacity" id="btn-apply-dashboard" type="button">
+<span class="material-symbols-outlined" style="font-size:18px;">cloud_done</span>
+<span>데이터 적용 및 대시보드 반영</span>
+</button>
+<button class="flex-1 md:flex-none flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-low text-secondary hover:text-on-surface font-body-compact-bold text-body-compact-bold transition-colors" id="btn-cancel" type="button">
+<span class="material-symbols-outlined" style="font-size:18px;">close</span>
+<span>취소하고 돌아가기</span>
+</button>
+</div>
+<!-- Reference & Helper Assets Links -->
+<div class="flex items-center justify-end gap-space-md w-full md:w-auto">
+<button class="flex items-center gap-space-xs text-secondary hover:text-on-surface font-body-compact-bold text-body-compact-bold transition-colors" type="button">
+<span class="material-symbols-outlined" style="font-size:16px;">download</span>
+<span>샘플 가상 데이터 CSV 다운로드</span>
+</button>
+<span class="h-3 w-px bg-outline-variant"></span>
+<button class="flex items-center gap-space-xs text-secondary hover:text-on-surface font-body-compact-bold text-body-compact-bold transition-colors" id="btn-spec-guide" type="button">
+<span class="material-symbols-outlined" style="font-size:16px;">menu_book</span>
+<span>데이터 규격 가이드 보기</span>
+</button>
+</div>
+</div>
+<!-- Data Spec Specification Slide-out Drawer / Overlay Box (Hidden by default, triggered by JS) -->
+<div class="hidden fixed inset-0 z-50 bg-inverse-surface/40 flex items-center justify-center p-space-md backdrop-blur-sm" id="spec-modal">
+<div class="bg-surface-container-lowest max-w-2xl w-full rounded-xl shadow-xl overflow-hidden flex flex-col">
+<div class="p-space-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface" style="font-size:22px;">dataset</span>
+<span class="font-section-header text-section-header text-on-surface">본사 총괄 데이터 규격 명세서 (15개 필수 컬럼)</span>
+</div>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-high flex items-center justify-center text-secondary" id="btn-close-spec" type="button">
+<span class="material-symbols-outlined" style="font-size:20px;">close</span>
+</button>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md max-h-[716px] overflow-y-auto font-body-compact text-body-compact">
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+<span class="font-body-compact-bold text-body-compact-bold text-on-surface">1. 데이터셋 구조 규칙</span>
+<p class="text-on-surface-variant">현장 코드 A부터 L까지 정확히 12개 현장이 존재해야 하며, 각 현장별로 2025-10부터 2026-09까지 12개월의 시계열 행이 순서대로 정렬되어 총 144행이 완성되어야 합니다.</p>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+<span class="font-body-compact-bold text-body-compact-bold text-on-surface">2. 당월기성액 산출 및 예외 규칙</span>
+<p class="text-on-surface-variant">• 2025-10: 시작 기준월이므로 당월기성액은 NULL 또는 '계산 불가'로 자동 표기됩니다.<br/>• 2025-11 ~ 2026-09: 당월기성액 = [당월 누적기성액] - [전월 누적기성액].<br/>• 현장 J 2026년 7월과 같이 실적이 발생하지 않은 경우 음수가 아닌 0.0 정규값으로 유지됩니다.</p>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+<span class="font-body-compact-bold text-body-compact-bold text-on-surface">3. 멱등성 및 원자적 업데이트 원칙</span>
+<p class="text-on-surface-variant">동일한 데이터셋의 중복 업로드는 복제 레코드를 발생시키지 않으며, 검증 실패 시 기존 2026-09 대시보드 상태가 100% 보존됩니다.</p>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low flex justify-end">
+<button class="px-space-md py-space-xs rounded bg-surface-container-highest text-on-surface font-body-compact-bold text-body-compact-bold" id="btn-close-spec-bottom" type="button">
+            확인 및 닫기
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Interactive UI Simulation Logic
+  (function initDataImportScreen() {
+    const dropZone = document.getElementById('drop-zone');
+    const fileInput = document.getElementById('file-input');
+    const filenameLabel = document.getElementById('current-filename');
+    const applyBtn = document.getElementById('btn-apply-dashboard');
+    const cancelBtn = document.getElementById('btn-cancel');
+    const specGuideBtn = document.getElementById('btn-spec-guide');
+    const specModal = document.getElementById('spec-modal');
+    const closeSpecBtn = document.getElementById('btn-close-spec');
+    const closeSpecBottomBtn = document.getElementById('btn-close-spec-bottom');
+    const loadMockBtn = document.getElementById('btn-load-mock');
+
+    // Drag-and-drop visual states
+    if (dropZone) {
+      ['dragenter', 'dragover'].forEach(event => {
+        dropZone.addEventListener(event, (e) => {
+          e.preventDefault();
+          dropZone.classList.add('bg-surface-container-high');
+        });
+      });
+
+      ['dragleave', 'drop'].forEach(event => {
+        dropZone.addEventListener(event, (e) => {
+          e.preventDefault();
+          dropZone.classList.remove('bg-surface-container-high');
+        });
+      });
+
+      dropZone.addEventListener('drop', (e) => {
+        const files = e.dataTransfer.files;
+        if (files && files.length > 0) {
+          filenameLabel.textContent = files[0].name;
+          showToast(`파일 "${files[0].name}" 정합성 사전 검증 통과 (144행 무결성 확인)`);
+        }
+      });
+    }
+
+    if (fileInput) {
+      fileInput.addEventListener('change', (e) => {
+        if (e.target.files && e.target.files.length > 0) {
+          filenameLabel.textContent = e.target.files[0].name;
+          showToast(`파일 "${e.target.files[0].name}" 검증 통과`);
+        }
+      });
+    }
+
+    if (loadMockBtn) {
+      loadMockBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        filenameLabel.textContent = 'HQ_Consolidated_Financials_2026Q3_Verified.json';
+        showToast('표준 JSON 144건 로드 완료 (중복 없이 기존 캐시 갱신)');
+      });
+    }
+
+    // Spec Modal controls
+    if (specGuideBtn && specModal) {
+      specGuideBtn.addEventListener('click', () => {
+        specModal.classList.remove('hidden');
+      });
+    }
+
+    [closeSpecBtn, closeSpecBottomBtn].forEach(btn => {
+      if (btn && specModal) {
+        btn.addEventListener('click', () => {
+          specModal.classList.add('hidden');
+        });
+      }
+    });
+
+    // Commit Action
+    if (applyBtn) {
+      applyBtn.addEventListener('click', () => {
+        applyBtn.disabled = true;
+        const originalText = applyBtn.innerHTML;
+        applyBtn.innerHTML = '<span class="material-symbols-outlined animate-spin" style="font-size:18px;">sync</span><span>대시보드 반영 중...</span>';
+        
+        setTimeout(() => {
+          applyBtn.disabled = false;
+          applyBtn.innerHTML = originalText;
+          showToast('144개 시계열 데이터가 대시보드에 성공적으로 반영되었습니다.');
+        }, 800);
+      });
+    }
+
+    // Cancel Action
+    if (cancelBtn) {
+      cancelBtn.addEventListener('click', () => {
+        showToast('가져오기가 취소되었습니다. 기존 2026-09 데이터가 보존됩니다.');
+      });
+    }
+
+    // Helper Toast
+    function showToast(msg) {
+      const toast = document.createElement('div');
+      toast.className = 'fixed top-20 right-8 z-50 bg-primary-container text-on-primary px-space-md py-space-sm rounded-lg shadow-xl font-body-compact-bold text-body-compact-bold flex items-center gap-space-xs transition-opacity duration-300';
+      toast.innerHTML = `<span class="material-symbols-outlined" style="font-size:18px;">check_circle</span><span>${msg}</span>`;
+      document.body.appendChild(toast);
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        setTimeout(() => toast.remove(), 300);
+      }, 3200);
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-low py-space-lg"><div class="w-full px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-compact text-body-compact"><span>© 2026 건설공정기성통합관리시스템 HQ Enterprise Operations. All rights reserved.</span><div class="flex items-center gap-space-md font-badge-label text-badge-label text-secondary"><span>데이터 갱신 주기: 실시간</span><span>본사 감리망 V4.8</span><span>통합 보안 인증 완료</span></div></div></footer></body></html>
